@@ -49,5 +49,6 @@ pipeline {
 		failure {
 			echo 'I run only when you fail'
 		}
+		// we also can have changed(when the status of a build changes) and unstable (when test failed) 
 	}
 }
