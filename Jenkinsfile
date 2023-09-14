@@ -1,5 +1,5 @@
 // SCRIPTED PIPELINE
-/*node {
+node {
 	stage('Build') {
 		echo "Build"
 	}
@@ -9,7 +9,7 @@
 	stage('Integration Test') {
 		echo "Test"
 	}
-}*/
+}
  // SCRIPTED PIPELINE
 /*node {
 	echo "Build"
@@ -18,7 +18,7 @@
 }*/
 
 // DECLARATIVE PIPELINE
-pipeline {
+/*pipeline {
 	agent any
 	//agent { docker { image 'maven:3.6.3'} }
 	//agent { docker { image 'node:13.8'} }
@@ -94,4 +94,4 @@ pipeline {
 		}
 		// we also can have changed(when the status of a build changes) and unstable (when test failed) 
 	}
-}
+}*/
