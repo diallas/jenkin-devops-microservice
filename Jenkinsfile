@@ -22,16 +22,19 @@ pipeline {
                 echo "BUILD_URL - $env.BUILD_URL"
             }
         }
+
         stage('Compile') {
             steps {
                 sh 'mvn clean install'
             }
         }
+
         stage('Test') {
             steps {
                 echo "mvn test"
             }
         }
+
         stage('Integration Test') {
             steps {
                 sh 'mvn failsafe:integration-test failsafe:verify'
